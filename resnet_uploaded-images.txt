@@ -1,0 +1,76 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+This is image_dir uploaded_images/
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:     Pembroke_Welsh_Corgi_2.jpg  label:       pembroke welsh corgi
+ 2 key:   ferrari_sergio_elitencar.jpg  label:             ferrari sergio
+ 3 key:               Push_van_cat.jpg  label:                   push van
+ 4 key:     Pembroke_Welsh-Corgi_1.jpg  label:                   pembroke
+
+     MATCH:
+
+    Pembroke_Welsh_Corgi_2.jpg: 
+Real:       pembroke welsh corgi   Classifier: pembroke, pembroke welsh corgi, corgi
+
+    Pembroke_Welsh-Corgi_1.jpg: 
+Real:                   pembroke   Classifier: pembroke, pembroke welsh corgi, corgi
+
+ NOT A MATCH:
+
+  ferrari_sergio_elitencar.jpg: 
+Real:             ferrari sergio   Classifier:          sports car, sport car
+
+              Push_van_cat.jpg: 
+Real:                   push van   Classifier:              egyptian cat, cat
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+    Pembroke_Welsh_Corgi_2.jpg: 
+Real:       pembroke welsh corgi   Classifier: pembroke, pembroke welsh corgi, corgi  
+PetLabelDog: 1  ClassLabelDog: 1
+
+    Pembroke_Welsh-Corgi_1.jpg: 
+Real:                   pembroke   Classifier: pembroke, pembroke welsh corgi, corgi  
+PetLabelDog: 0  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+  ferrari_sergio_elitencar.jpg: 
+Real:             ferrari sergio   Classifier:          sports car, sport car  
+PetLabelDog: 0  ClassLabelDog: 0
+
+              Push_van_cat.jpg: 
+Real:                   push van   Classifier:              egyptian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  66.7  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  66.7  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+            N Images:   4
+        N Dog Images:   1
+    N Not-Dog Images:   3
+ 
+           pct_match:  50.0
+    pct_correct_dogs: 100.0
+   pct_correct_breed: 100.0
+ pct_correct_notdogs:  66.7
+
+INCORRECT Dog/NOT Dog Assignments:
+Real: pembroke                     Classifier: pembroke, pembroke welsh corgi, corgi
+
+** Total Elapsed Runtime: 0:0:0
