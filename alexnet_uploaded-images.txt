@@ -1,0 +1,77 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+This is image_dir uploaded_images/
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:             Pembroke_Welsh_Corgi_2.jpg           label:           pembroke welsh corgi
+ 2 key:           ferrari_sergio_elitencar.jpg           label:                 ferrari sergio
+ 3 key:                       Push_van_cat.jpg           label:                       push van
+ 4 key:             Pembroke_Welsh-Corgi_1.jpg           label:                       pembroke
+
+     MATCH:
+
+ NOT A MATCH:
+
+    Pembroke_Welsh_Corgi_2.jpg: 
+Real:       pembroke welsh corgi   Classifier:              teddy, teddy bear
+
+  ferrari_sergio_elitencar.jpg: 
+Real:             ferrari sergio   Classifier:          sports car, sport car
+
+              Push_van_cat.jpg: 
+Real:                   push van   Classifier:                           lynx
+
+    Pembroke_Welsh-Corgi_1.jpg: 
+Real:                   pembroke   Classifier: cardigan, cardigan welsh corgi, corgi
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+    Pembroke_Welsh_Corgi_2.jpg: 
+Real:       pembroke welsh corgi   Classifier:              teddy, teddy bear  
+PetLabelDog: 1  ClassLabelDog: 0
+
+  ferrari_sergio_elitencar.jpg: 
+Real:             ferrari sergio   Classifier:          sports car, sport car  
+PetLabelDog: 0  ClassLabelDog: 0
+
+              Push_van_cat.jpg: 
+Real:                   push van   Classifier:                           lynx  
+PetLabelDog: 0  ClassLabelDog: 0
+
+    Pembroke_Welsh-Corgi_1.jpg: 
+Real:                   pembroke   Classifier: cardigan, cardigan welsh corgi, corgi  
+PetLabelDog: 0  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog:   0.0 Pct Corr NOTdog:  66.7  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog:   0.0 Pct Corr NOTdog:  66.7  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+            N Images:   4
+        N Dog Images:   1
+    N Not-Dog Images:   3
+ 
+           pct_match:   0.0
+    pct_correct_dogs:   0.0
+   pct_correct_breed:   0.0
+ pct_correct_notdogs:  66.7
+
+INCORRECT Dog/NOT Dog Assignments:
+Real: pembroke welsh corgi         Classifier: teddy, teddy bear             
+Real: pembroke                     Classifier: cardigan, cardigan welsh corgi, corgi
+
+** Total Elapsed Runtime: 0:0:0
